@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Am's Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Muhammad Amir Amsyar Bin Zain Azman, a highly motivated Information Systems Management student looking for internships.">
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="glass-nav">
+            <a href="#" class="logo">
+                <img src="image/logo.png" alt="Logo" class="site-logo">
+                Am's<span>.dev</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls" style="display: flex; align-items: center; gap: 1.5rem;">
+                <i class='bx bx-moon theme-toggle' id="themeToggle"
+                    style="font-size: 1.5rem; cursor: pointer; transition: color 0.3s;"
+                    onmouseover="this.style.color='var(--primary-color)'"
+                    onmouseout="this.style.color='var(--text-color)'" title="Toggle Theme"></i>
+                <div class="menu-icon" id="menu-icon">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section-hidden">
+            <!-- Bubbles -->
+            <div class="bubble bubble-blue b-1"></div>
+            <div class="bubble bubble-purple b-7"></div>
+            <div class="bubble bubble-pink b-12"></div>
+            <div class="bubble bubble-indigo b-9"></div>
+
+            <div class="hero-content">
+                <p class="greeting">Hi, I am</p>
+                <h1 style="font-size: 2rem;">Muhammad <span class="gradient-text">Amir Amsyar</span></h1>
+                <h2 class="role">Information Systems <span class="gradient-text">Student</span></h2>
+                <p class="summary">
+                    I am 22 years old, a highly motivated student with passion about leverage technology to solve
+                    problems and create intuitive user experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/amiramsyar99" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/muhammad-amir-amsyar-81926a412/" target="_blank"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/ameamsyr/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.me/60146993203" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="glass-card image-wrapper">
+                    <img src="image/amsyar.png" alt="Muhammad Amir Amsyar">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-hidden">
+            <!-- Bubbles -->
+            <div class="bubble bubble-indigo b-4"></div>
+            <div class="bubble bubble-blue b-13"></div>
+            <div class="bubble bubble-purple b-6"></div>
+            <div class="bubble bubble-pink b-11"></div>
+
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            <div class="about-container">
+                <div class="about-text glass-card">
+                    <p>
+                        I am a final-year Information Systems Management student with a strong foundation in both system
+                        administration and web development. I am driven by a deep curiosity and a passion for continuous
+                        learning, I thrive in environments where I can absorb new knowledge, explore emerging
+                        technologies, and tackle unfamiliar challenges.
+                    </p>
+                    <p>
+                        During my recent industrial training at Kementerian Pendidikan Malaysia (KPM), I gained hands-on
+                        experience providing comprehensive IT helpdesk support, managing hardware deployments, and
+                        coordinating technical setups for large-scale events. I also designed and deployed a centralized
+                        internal portal using Google Sites, which significantly streamlined document management for the
+                        department.
+                    </p>
+                    <p>
+                        Academically, I have developed expertise in full-stack web development (PHP/CakePHP, WordPress),
+                        advanced database management (MySQL, MongoDB), and UX/UI design (Figma). I am highly adaptable
+                        and always eager to expand my skill set to solve real-world problems.
+                    </p>
+                    <p>
+                        I am currently seeking a professional internship and career where I can contribute to a dynamic
+                        IT team while continuing to develop my IT skills and expertise. Let's connect!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section-hidden">
+            <!-- Bubbles -->
+            <div class="bubble bubble-pink b-3"></div>
+            <div class="bubble bubble-indigo b-10"></div>
+            <div class="bubble bubble-blue b-14"></div>
+            <div class="bubble bubble-purple b-8"></div>
+
+            <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+            <div class="education-container"
+                style="display: flex; flex-direction: column; gap: 2rem; max-width: 800px; margin: 0 auto; width: 100%;">
+
+                <div class="education-card glass-card"
+                    style="padding: 2rem; display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+                    <img src="image/UiTM logo.png" alt="UiTM Logo"
+                        style="width: 120px; height: 120px; object-fit: contain; flex-shrink: 0;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem; font-size: 1.4rem;">Bachelor of
+                            Information Science (Information System Management) (Hons)</h3>
+                        <p style="font-weight: 600; margin-bottom: 0.5rem;">Universiti Teknologi MARA, Cawangan Negeri
+                            Selangor Kampus Puncak Perdana</p>
+                        <div
+                            style="display: flex; justify-content: space-between; color: var(--text-muted); flex-wrap: wrap; gap: 1rem;">
+                            <span>Current CGPA: 3.63 (Dean's List)</span>
+                            <span>2025 - 2027</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card glass-card"
+                    style="padding: 2rem; display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+                    <img src="image/UiTM logo.png" alt="UiTM Logo"
+                        style="width: 120px; height: 120px; object-fit: contain; flex-shrink: 0;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem; font-size: 1.4rem;">Diploma In
+                            Information Management</h3>
+                        <p style="font-weight: 600; margin-bottom: 0.5rem;">Universiti Teknologi MARA, Cawangan Negeri
+                            Sembilan Kampus Rembau</p>
+                        <div
+                            style="display: flex; justify-content: space-between; color: var(--text-muted); flex-wrap: wrap; gap: 1rem;">
+                            <span>CGPA: 3.52 (Dean's List)</span>
+                            <span>2022 - 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card glass-card"
+                    style="padding: 2rem; display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+                    <img src="image/SMKBSB logo.png" alt="SMKBSB Logo"
+                        style="width: 120px; height: 120px; object-fit: contain; flex-shrink: 0;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem; font-size: 1.4rem;">Sekolah
+                            Menengah Kebangsaan Bandar Sungai Buaya (SMKBSB)</h3>
+                        <p style="font-weight: 600; margin-bottom: 0.5rem;">Rawang, Selangor</p>
+                        <div
+                            style="display: flex; justify-content: space-between; color: var(--text-muted); flex-wrap: wrap; gap: 1rem;">
+                            <span>High School</span>
+                            <span>2017 - 2021</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card glass-card"
+                    style="padding: 2rem; display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+                    <img src="image/SKBSB.png" alt="SKBSB Logo"
+                        style="width: 120px; height: 120px; object-fit: contain; flex-shrink: 0;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem; font-size: 1.4rem;">Sekolah
+                            Kebangsaan Bandar Sungai Buaya (SKBSB)</h3>
+                        <p style="font-weight: 600; margin-bottom: 0.5rem;">Rawang, Selangor</p>
+                        <div
+                            style="display: flex; justify-content: space-between; color: var(--text-muted); flex-wrap: wrap; gap: 1rem;">
+                            <span>Elementary School</span>
+                            <span>2012 - 2016</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-hidden">
+            <!-- Bubbles -->
+            <div class="bubble bubble-purple b-2"></div>
+            <div class="bubble bubble-pink b-5"></div>
+            <div class="bubble bubble-indigo b-15"></div>
+            <div class="bubble bubble-blue b-9"></div>
+
+            <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category glass-card">
+                    <h3>Frontend & Design</h3>
+                    <div class="skill-tags">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>React.js</span>
+                        <span>Tailwind CSS</span>
+                        <span>Bootstrap</span>
+                        <span>Chart.js</span>
+                        <span>Figma</span>
+                        <span>Canva</span>
+                        <span>SketchUp</span>
+                        <span>Wix</span>
+                        <span>WordPress</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Backend & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span>C++</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>CakePHP</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>PhpMyAdmin</span>
+                        <span>MongoDB</span>
+                        <span>Data Management</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Analytics & Tools</h3>
+                    <div class="skill-tags">
+                        <span>Data Visualization</span>
+                        <span>Tableau</span>
+                        <span>Microsoft Power BI</span>
+                        <span>Google Sites</span>
+                        <span>Microsoft Office</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="projects" class="projects section-hidden">
+            <!-- Bubbles -->
+            <div class="bubble bubble-blue b-1"></div>
+            <div class="bubble bubble-purple b-4"></div>
+            <div class="bubble bubble-pink b-12"></div>
+            <div class="bubble bubble-indigo b-7"></div>
+
+            <h2 class="section-title">Experience & <span class="gradient-text">Projects</span></h2>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web dev">Web Dev</button>
+                <button class="filter-btn" data-filter="c++">C++</button>
+                <button class="filter-btn" data-filter="it support">IT Support</button>
+            </div>
+
+            <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Professional Experience</h3>
+            <div class="projects-grid" style="margin-bottom: 3rem;">
+                <div class="project-card glass-card">
+                    <div class="project-info">
+                        <h3>IT & Technical Assistant (Intern)</h3>
+                        <p><strong>Kementerian Pendidikan Malaysia (KPM)</strong> | July - Sept 2024</p>
+                        <ul
+                            style="margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--text-muted); line-height: 1.6; list-style-type: disc;">
+                            <li>Provided daily technical support and troubleshooting for staff workstations, ensuring
+                                minimal downtime and smooth operations.</li>
+                            <li>Managed the deployment and configuration of new computer workstations and network
+                                equipment.</li>
+                            <li>Coordinated technical setups and AV requirements for various departmental events and
+                                high-level meetings.</li>
+                            <li>Designed and deployed a centralized departmental portal using Google Sites, streamlining
+                                document management and improving information accessibility across the department.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>IT Support</span>
+                            <span>System Admin</span>
+                            <span>Google Sites</span>
+                        </div>
+                        <div class="project-links" style="margin-bottom: 1.5rem;">
+                            <a href="https://sites.google.com/moe.gov.my/portal-sppkp/home" target="_blank"
+                                class="btn btn-secondary btn-small"><i class='bx bx-link-external'></i> View
+                                Departmental Portal</a>
+                        </div>
+                        <div class="intern-gallery">
+                            <img src="image/Intern 1.jpg" alt="Internship 1">
+                            <img src="image/Intern 2.jpg" alt="Internship 2">
+                            <img src="image/Intern 3.jpg" alt="Internship 3">
+                            <img src="image/Intern 4.jpg" alt="Internship 4">
+                            <img src="image/Intern 5.jpg" alt="Internship 5">
+                            <img src="image/Intern 6.jpg" alt="Internship 6">
+                            <img src="image/Intern 7.jpg" alt="Internship 7">
+                            <img src="image/Intern 8.jpg" alt="Internship 8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Degree Projects</h3>
+            <div class="projects-grid" style="margin-bottom: 3rem;">
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <img src="Degree Project/Flight Booking System (Web).png" alt="Flight Booking System (Web)">
+                    </div>
+                    <div class="project-info">
+                        <h3>Flight Booking System (Web)</h3>
+                        <p>A comprehensive web-based flight booking platform featuring a responsive user interface.</p>
+                        <div class="project-tech">
+                            <span>PHP 8.1 & CakePHP 5.2</span>
+                            <span>Bootstrap 5 & Chart.js</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <img src="Degree Project/Flight booking system (C++).png" alt="Flight Booking System (C++)">
+                    </div>
+                    <div class="project-info">
+                        <h3>Flight Booking System (C++)</h3>
+                        <p>A terminal-based flight booking application utilizing core C++ data structures and
+                            object-oriented programming.</p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <img src="Degree Project/Parcel Management System.png" alt="Parcel Management System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Parcel Management System</h3>
+                        <p>A system designed to track, organize, and manage parcel deliveries efficiently.</p>
+                        <div class="project-tech">
+                            <span>Node.js & Express.js</span>
+                            <span>React.js & TailwindCSS</span>
+                            <span>MongoDB Atlas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <img src="Degree Project/E-Commerce Website.png" alt="E-Commerce Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Website</h3>
+                        <p>A full-stack e-commerce solution with dynamic product listings and interactive dashboard
+                            elements.</p>
+                        <div class="project-tech">
+                            <span>HTML5 & CSS3</span>
+                            <span>Bootstrap 5.3.3</span>
+                            <span>Chart.js</span>
+                            <span>Google Fonts</span>
+                            <span>FontAwesome</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <img src="Degree Project/Personal Hobby Website.png" alt="Personal Hobby Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Hobby Website</h3>
+                        <p>A dedicated website designed to showcase and share my personal hobbies and interests.</p>
+                        <div class="project-tech">
+                            <span>Wix</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <img src="Degree Project/Local Tourism Website.png" alt="Local Tourism Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Local Tourism Website</h3>
+                        <p>A platform built to suggest and promote exciting places to visit, featuring locations such as
+                            Templer Park.</p>
+                        <div class="project-tech">
+                            <span>WordPress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Diploma Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <img src="Diploma Project/E-Commerce Website.png" alt="E-Commerce Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Website</h3>
+                        <p>A fully functional online store designed to handle product listings, shopping cart logic, and
+                            simulated checkouts.</p>
+                        <div class="project-tech">
+                            <span>HTML/CSS/JS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <img src="Diploma Project/Food Ordering Website.png" alt="Food Ordering System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Beverage Shop Website</h3>
+                        <p>A digital menu and ordering platform for beverage shop to streamline customer orders and
+                            management.</p>
+                        <div class="project-tech">
+                            <span>HTML/CSS/JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <img src="Diploma Project/Hotel Booking System.png" alt="Hotel Booking System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Hotel Booking System</h3>
+                        <p>An early C++ project demonstrating algorithm logic and memory management for a hotel booking
+                            application.</p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <img src="Diploma Project/Personal Website.png" alt="Personal Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Website</h3>
+                        <p>My very first portfolio website introducing my background, skills, and resume.</p>
+                        <div class="project-tech">
+                            <span>HTML/CSS/JS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-img">
+                        <img src="Diploma Project/Mini Utilities.png" alt="Mini Utilities">
+                    </div>
+                    <div class="project-info">
+                        <h3>Mini Utilities</h3>
+                        <p>Small-scale applications and scripts including a BMI Calculator and other utility tools.</p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates section-hidden">
+            <!-- Bubbles -->
+            <div class="bubble bubble-pink b-3"></div>
+            <div class="bubble bubble-indigo b-10"></div>
+            <div class="bubble bubble-blue b-14"></div>
+            <div class="bubble bubble-purple b-8"></div>
+
+            <h2 class="section-title">Certifications & <span class="gradient-text">Awards</span></h2>
+
+            <div class="projects-grid" style="margin-bottom: 3rem;">
+                <a href="certificate/Screenshot 2026-06-09 225053.png" target="_blank" class="project-card glass-card"
+                    style="text-decoration: none; color: inherit; display: block; padding-bottom: 1.5rem;">
+                    <div class="project-img" style="height: 250px; background: rgba(0,0,0,0.2);">
+                        <img src="certificate/Screenshot 2026-06-09 225053.png" alt="Certificate 1"
+                            style="object-fit: contain;">
+                    </div>
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <h3 style="color: var(--primary-color);">Certificate 1</h3>
+                    </div>
+                </a>
+                <a href="certificate/Screenshot 2026-06-09 225114.png" target="_blank" class="project-card glass-card"
+                    style="text-decoration: none; color: inherit; display: block; padding-bottom: 1.5rem;">
+                    <div class="project-img" style="height: 250px; background: rgba(0,0,0,0.2);">
+                        <img src="certificate/Screenshot 2026-06-09 225114.png" alt="Certificate 2"
+                            style="object-fit: contain;">
+                    </div>
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <h3 style="color: var(--primary-color);">Certificate 2</h3>
+                    </div>
+                </a>
+                <a href="certificate/Screenshot 2026-06-09 225130.png" target="_blank" class="project-card glass-card"
+                    style="text-decoration: none; color: inherit; display: block; padding-bottom: 1.5rem;">
+                    <div class="project-img" style="height: 250px; background: rgba(0,0,0,0.2);">
+                        <img src="certificate/Screenshot 2026-06-09 225130.png" alt="Certificate 3"
+                            style="object-fit: contain;">
+                    </div>
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <h3 style="color: var(--primary-color);">Certificate 3</h3>
+                    </div>
+                </a>
+                <a href="certificate/Screenshot 2026-06-09 225159.png" target="_blank" class="project-card glass-card"
+                    style="text-decoration: none; color: inherit; display: block; padding-bottom: 1.5rem;">
+                    <div class="project-img" style="height: 250px; background: rgba(0,0,0,0.2);">
+                        <img src="certificate/Screenshot 2026-06-09 225159.png" alt="Certificate 4"
+                            style="object-fit: contain;">
+                    </div>
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <h3 style="color: var(--primary-color);">Certificate 4</h3>
+                    </div>
+                </a>
+                <a href="certificate/Screenshot 2026-06-09 225221.png" target="_blank" class="project-card glass-card"
+                    style="text-decoration: none; color: inherit; display: block; padding-bottom: 1.5rem;">
+                    <div class="project-img" style="height: 250px; background: rgba(0,0,0,0.2);">
+                        <img src="certificate/Screenshot 2026-06-09 225221.png" alt="Certificate 5"
+                            style="object-fit: contain;">
+                    </div>
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <h3 style="color: var(--primary-color);">Certificate 5</h3>
+                    </div>
+                </a>
+                <a href="certificate/Screenshot 2026-06-09 225243.png" target="_blank" class="project-card glass-card"
+                    style="text-decoration: none; color: inherit; display: block; padding-bottom: 1.5rem;">
+                    <div class="project-img" style="height: 250px; background: rgba(0,0,0,0.2);">
+                        <img src="certificate/Screenshot 2026-06-09 225243.png" alt="Certificate 6"
+                            style="object-fit: contain;">
+                    </div>
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <h3 style="color: var(--primary-color);">Certificate 6</h3>
+                    </div>
+                </a>
+                <a href="certificate/Screenshot 2026-06-09 225303.png" target="_blank" class="project-card glass-card"
+                    style="text-decoration: none; color: inherit; display: block; padding-bottom: 1.5rem;">
+                    <div class="project-img" style="height: 250px; background: rgba(0,0,0,0.2);">
+                        <img src="certificate/Screenshot 2026-06-09 225303.png" alt="Certificate 7"
+                            style="object-fit: contain;">
+                    </div>
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <h3 style="color: var(--primary-color);">Certificate 7</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-hidden">
+            <!-- Bubbles -->
+            <div class="bubble bubble-indigo b-11"></div>
+            <div class="bubble bubble-blue b-6"></div>
+            <div class="bubble bubble-purple b-13"></div>
+            <div class="bubble bubble-pink b-15"></div>
+
+            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            <div class="contact-container glass-card">
+                <p>I'm eager to bring my academic foundation and hands-on technical experience to a dynamic IT team.
+                    Whether you have an opportunity, a project to discuss, an internship or a job offer, I would love to
+                    hear from you!</p>
+                <div style="margin-bottom: 2rem; font-size: 1.1rem;">
+                    <p style="margin-bottom: 0.5rem;"><i class='bx bx-envelope'></i> amiramsyar909@gmail.com</p>
+                    <p><i class='bx bx-phone'></i> +60146993203</p>
+                </div>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="mailto:amiramsyar909@gmail.com" class="btn btn-primary btn-large">Email Me</a>
+                    <a href="https://wa.me/60146993203" target="_blank" class="btn btn-secondary btn-large"><i
+                            class='bx bxl-whatsapp'></i> WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Muhammad Amir Amsyar. Built with <i class='bx bxs-heart'></i></p>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop" title="Back to top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
