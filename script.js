@@ -19,7 +19,7 @@ navItems.forEach(item => {
 const revealSections = document.querySelectorAll('.section-hidden');
 
 const revealOptions = {
-    threshold: 0.15,
+    threshold: 0,
     rootMargin: "0px 0px -50px 0px"
 };
 
